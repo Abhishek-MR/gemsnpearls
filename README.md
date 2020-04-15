@@ -1,3 +1,6 @@
-# React-Static - Basic Template
+# Installation
 
-To use this template, run `react-static create` and use the `basic` template.
+* Clone this repository
+* Run `npm install`
+* Run `npm start`
+* Visit http://localhost:3000 or change PORT in .env file
