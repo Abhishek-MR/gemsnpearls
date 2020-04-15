@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
+    Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  color: #333;
+}
+body,
+input,
+textarea,
+button {
+  font-size: 16px;
+  font-family: 'Comic Neue', cursive;
+  /* font-family: 'Shadows Into Light Two', cursive; */
+  /* font-family: 'Covered By Your Grace', cursive; */
+  /* font-family: 'Amatic SC', cursive; */
+}
+
+a {
+  text-decoration: none;
+  color: #108db8;
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
+
+nav {
+  background: #f7f7f7;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  color: white;
+  padding: 1rem;
+  display: inline-block;
+}
+
+nav img {
+  margin: 0 auto;
+  width: 200px;
+}
+
+.content {
+}
+
+.Home h1 {
+  text-align: center;
+  margin: 0 0 2rem;
+}
+.sect {
+  width: 900px;
+  text-align: center;
+  font-size: 20px;
+  margin: 0 auto 2rem;
+}
+.map {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.contact {
+  width: 500px;
+  margin: 0 auto;
+}
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+.contact textarea {
+  height: 200px;
+}
+.contact .grp {
+  margin-bottom: 1rem;
+}
+.contact button {
+  width: 100%;
+  border: none;
+  background: #ccc;
+  padding: 10px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery .gt {
+  width: 33.3%;
+}
