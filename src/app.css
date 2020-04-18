@@ -1,7 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700&display=swap');
 
 * {
   scroll-behavior: smooth;
@@ -14,7 +13,7 @@ body {
   font-weight: 300;
   margin: 0;
   padding: 0;
-  background: #f7f7f7;
+  /* background: #f7f7f7; */
   color: #333;
 }
 body,
@@ -23,36 +22,43 @@ textarea,
 button {
   font-size: 16px;
   font-family: 'Comic Neue', cursive;
-  /* font-family: 'Shadows Into Light Two', cursive; */
-  /* font-family: 'Covered By Your Grace', cursive; */
-  /* font-family: 'Amatic SC', cursive; */
 }
 
 a {
   text-decoration: none;
-  color: #108db8;
-  font-weight: bold;
+  /* color: #108db8; */
+  color: #333;
+  /* font-weight: bold; */
 }
 
 img {
   max-width: 100%;
+  vertical-align: top;
 }
 
 nav {
-  background: #f7f7f7;
-  display: flex;
-  justify-content: center;
+  /* background: #f7f7f7; */
+  margin: 0 0 2rem;
 }
 
-nav a {
-  color: white;
-  padding: 1rem;
+nav .lk a {
+  font-family: Manrope;
+  padding: 40px 20px;
   display: inline-block;
 }
 
 nav img {
   margin: 0 auto;
+  /* width: 100px; */
   width: 200px;
+}
+.navi {
+  display: flex;
+  margin: 0 auto;
+  width: 800px;
+}
+.navi .ld {
+  flex: 1;
 }
 
 .content {
@@ -61,6 +67,8 @@ nav img {
 .Home h1 {
   text-align: center;
   margin: 0 0 2rem;
+  font-family: 'Baloo Bhaina 2';
+  font-size: 40px;
 }
 .sect {
   width: 900px;
@@ -69,9 +77,17 @@ nav img {
   margin: 0 auto 2rem;
 }
 .map {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
+  flex: 1;
+  margin-right: 2rem;
+  /* border: 2px dashed #fff; */
+  border: 2px dashed #9ad8d3;
+  padding: 10px;
+  border-radius: 16px;
+}
+.map iframe {
+  width: 100%;
+  vertical-align: top;
+  border-radius: 8px;
 }
 .contact {
   width: 500px;
@@ -82,6 +98,7 @@ nav img {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
+  /* border: none; */
   background: #fff;
 }
 .contact textarea {
@@ -92,9 +109,15 @@ nav img {
 }
 .contact button {
   width: 100%;
-  border: none;
-  background: #ccc;
+  border: 2px solid rgb(64, 191, 241);
+  background: #fff;
   padding: 10px;
+  box-shadow: 5px 5px 0 -1px #ff0, 5px 5px 0 1px rgb(25, 142, 189);
+  transition: 100ms box-shadow;
+  font-weight: bold;
+}
+.contact button:hover {
+  box-shadow: none;
 }
 .gallery {
   display: flex;
@@ -102,4 +125,186 @@ nav img {
 }
 .gallery .gt {
   width: 33.3%;
+}
+.footer {
+  background: #333;
+  color: #fff;
+}
+.footer a {
+  color: #fff;
+  font-family: sans-serif;
+}
+.fx {
+  height: 100px;
+  background-image: url(/14885.png);
+  background-size: 200px;
+}
+.bg2 {
+  background-image: url(/landing-backround.jpg);
+  background-size: cover;
+}
+.bg3 {
+  background-image: url(/h2-backround-img-1.jpg);
+  padding: 10rem 0 4rem;
+}
+.bg3 .sect {
+  width: 600px;
+}
+.bg4 {
+  background-image: url(/landing-bottom-backround.png);
+}
+.sect4.bg4 {
+  padding: 8rem 0 4rem;
+  background-position-y: -120px;
+}
+.sect4.bg4 h1 {
+  color: #fff;
+}
+.crds {
+  margin-bottom: 2rem;
+}
+.crdr {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.crdd {
+  display: flex;
+  width: 400px;
+  position: relative;
+}
+.crdd::after {
+  position: absolute;
+  background: #fdebeb;
+  width: 100px;
+  height: 100px;
+  left: 0;
+  top: 0;
+  content: '';
+  border-radius: 50px;
+  z-index: -1;
+}
+.crdd h2 {
+  font-family: 'Baloo Bhaina 2';
+}
+.crdd div:first-child {
+  margin-right: 1rem;
+  width: 115px;
+}
+.crdd + .crdd {
+  margin-left: 1rem;
+}
+.crdt {
+  flex: 1;
+}
+.sect4 {
+  padding: 4rem 0 0;
+}
+.figs {
+  position: relative;
+  /* height: 80px; */
+  top: -80px;
+}
+.figs .f1 {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+.figs .f2 {
+  position: absolute;
+  top: 10px;
+  right: 100px;
+}
+.figs .f3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.figs .f3 img:first-child {
+  top: 10px;
+}
+.sect2 {
+  display: flex;
+  width: 900px;
+  margin: 0 auto;
+}
+.cbgs {
+  position: relative;
+  overflow: hidden;
+}
+.cbgs img.brd {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 40px;
+  margin: 0 auto;
+}
+.cbgs img.cld {
+  position: absolute;
+  left: -40px;
+  top: 40px;
+}
+.cbgs img.cld2 {
+  position: absolute;
+  left: -40px;
+  top: 40px;
+  filter: sepia(.8);
+}
+.cbgs img.cld3 {
+  position: absolute;
+  right: -40px;
+  top: 0px;
+  filter: sepia(.5);
+}
+.bg5 {
+  /* background: #333; */
+}
+.bg5 .bg {
+  /* background-image: url(/testimonials_bgi.png);
+  background-size: 500px; */
+  padding: 2rem 0;
+}
+.bg6 {
+  height: 100px;
+  background-image: url(/team-background.jpg);
+}
+.cts {
+  margin-bottom: 4rem;
+}
+.bg6 h1 {
+  padding-top: 1rem;
+}
+.ftb {
+  display: flex;
+  padding: 4rem 0;
+  width: 900px;
+  margin: 0 auto;
+}
+.ftb > div {
+  flex: 1;
+}
+.ftf {
+  background: rgb(26, 26, 26);
+  padding: 10px;
+  text-align: right;
+}
+.footer img {
+  width: 30px;
+}
+.social a {
+  margin-right: 10px;
+}
+.footer h3 {
+  color: #fff;
+  font-family: 'Baloo Bhaina 2';
+  font-size: 24px;
+}
+.ftl-l a {
+  display: inline-block;
+  margin-bottom: 1rem;
 }

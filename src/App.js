@@ -16,11 +16,20 @@ function App() {
         <title>Gems N Pearls</title>
       </Head>
       <nav>
-        {/* <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/blog">Blog</Link>
-        <Link to="/dynamic">Dynamic</Link> */}
-        <img src="/logo.jpeg" />
+        <div className="navi">
+          <div className="ld">
+            <Link to="/">
+              <img src="/logo.png" />
+            </Link>
+          </div>
+          <div className="lk">
+            <Link to="/">Home</Link>
+            <Link to="/amenities">Amenities</Link>
+            <Link to="/team">Team</Link>
+            <Link to="/contact">Contact</Link>
+            <Link to="/about">About</Link>
+          </div>
+        </div>
       </nav>
       <div className="content">
         <React.Suspense fallback={<em>Loading...</em>}>
@@ -29,6 +38,68 @@ function App() {
             <Routes path="*" />
           </Router>
         </React.Suspense>
+      </div>
+      <div className="fx"></div>
+      <div className="footer">
+        <div className="ftb">
+          <div className="ftl">
+            <div className="ftl-l">
+              <div>
+                <h3>Get around</h3>
+              </div>
+              <div>
+                <a href="#"></a>
+              </div>
+              <div>
+                <a href="#">Admission</a>
+              </div>
+              <div>
+                <a href="#">Packages</a>
+              </div>
+              <div>
+                <a href="#">Demo classes</a>
+              </div>
+            </div>
+          </div>
+          <div className="ftl">
+            <div className="ftl-l">
+              <div>
+                <h3>Courses</h3>
+              </div>
+              <div>
+                <a href="#">Aspiring Vocalist</a>
+              </div>
+              <div>
+                <a href="#">Extreme Artist</a>
+              </div>
+              <div>
+                <a href="#">Little Speaker</a>
+              </div>
+              <div>
+                <a href="#">Easy Maths</a>
+              </div>
+            </div>
+          </div>
+          <div className="ftr">
+            <div className="social">
+              <h3>Social</h3>
+              <div>
+                <a href="#">
+                  <img src="/whatsapp.png" />
+                </a>
+                <a href="#">
+                  <img src="/twitter.png" />
+                </a>
+                <a href="#">
+                  <img src="/instagram.png" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="ftf">
+          &copy; 2020 Gems n Pearls
+        </div>
       </div>
     </Root>
   )
