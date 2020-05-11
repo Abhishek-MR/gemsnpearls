@@ -1,5 +1,6 @@
 import React from 'react'
-
+import Grid from '../components/Grid';
+import Header from '../components/Header'
 export default () => (
   <div className="Home">
     <div className="figs">
@@ -46,6 +47,12 @@ export default () => (
         ongoing development activities and workshops to update with the educational trends in accordance
         to the changing needs of modern children and families.
       </div>
+    </div>
+    <div>
+      
+    </div>
+    <div >
+      <Grid />
     </div>
     <div className="sect4">
       <h1>Founder &amp; Director</h1>

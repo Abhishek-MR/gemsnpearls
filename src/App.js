@@ -1,20 +1,20 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { Root, Routes, addPrefetchExcludes, Head } from 'react-static'
 //
 import { Link, Router } from 'components/Router'
+import  Header  from './components/Header'
+import  Footer  from 'components/Footer'
 import Dynamic from 'containers/Dynamic'
-
 import './app.css'
+import IMG from '../public/bgmain.png'
 
 // Any routes that start with 'dynamic' will be treated as non-static routes
 addPrefetchExcludes(['dynamic'])
 
 function App() {
   return (
+    <Fragment>
     <Root>
-      <Head>
-        <title>Gems N Pearls</title>
-      </Head>
       <nav>
         <div className="navi">
           <div className="ld">
@@ -31,6 +31,10 @@ function App() {
           </div>
         </div>
       </nav>
+      <div>
+        <img src = {IMG}>
+        </img>
+      </div>
       <div className="content">
         <React.Suspense fallback={<em>Loading...</em>}>
           <Router>
@@ -102,6 +106,7 @@ function App() {
         </div>
       </div>
     </Root>
+    </Fragment>
   )
 }
 
